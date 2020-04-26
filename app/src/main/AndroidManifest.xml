@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shs.itexperts.bookpdf">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/pdf_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pdf_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.OpenPdfActivity"
+            android:label="Open Pdf"/>
+        <activity android:name=".activities.ExternalStorageActivity"
+            android:label="Pdf List"/>
+        <activity android:name=".activities.WritePdfActivity"
+            android:label="Write Pdf"/>
+        <activity android:name=".activities.PdfRenderActivity" />
+        <activity android:name=".activities.ContentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+    </application>
+
+</manifest>
