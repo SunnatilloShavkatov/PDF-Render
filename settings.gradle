@@ -1,2 +1,2 @@
-rootProject.name='Book Pdf'
+rootProject.name='Pdf Render'
 include ':app'

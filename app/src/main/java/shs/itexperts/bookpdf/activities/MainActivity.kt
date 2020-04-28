@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import shs.itexperts.bookpdf.PdfRendererBasicFragment
+import shs.itexperts.bookpdf.fragment.PdfRendererBasicFragment
 import shs.itexperts.bookpdf.R
 
 class MainActivity : AppCompatActivity() {

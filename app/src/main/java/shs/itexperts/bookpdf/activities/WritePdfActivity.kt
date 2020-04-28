@@ -5,10 +5,12 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.itextpdf.text.Document
 import com.itextpdf.text.Paragraph
@@ -24,6 +26,7 @@ class WritePdfActivity : AppCompatActivity() {
     private lateinit var mTextEt: EditText
     private lateinit var mSaveBtn: Button
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_write_pdf)
@@ -56,6 +59,7 @@ class WritePdfActivity : AppCompatActivity() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     private fun savePdf() {
         //create object of Document class
         val mDoc = Document()
@@ -65,7 +69,8 @@ class WritePdfActivity : AppCompatActivity() {
             Locale.getDefault()
         ).format(System.currentTimeMillis())
         //pdf file path
-        val file = File(Environment.getExternalStorageDirectory(), "Pdf App")
+        val file = File(this.getExternalFilesDir(null), "Pdf App")
+        Log.d("ddddd",file.absolutePath)
         if (!file.exists()){
             file.mkdirs()
         }

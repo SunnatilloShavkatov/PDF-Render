@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PdfRendererBasicFragment">
+    tools:context=".fragment.PdfRendererBasicFragment">
 
     <shs.itexperts.bookpdf.views.TouchImageView
         android:id="@+id/image"

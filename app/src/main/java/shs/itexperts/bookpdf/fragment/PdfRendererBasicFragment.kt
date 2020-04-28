@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf
+package shs.itexperts.bookpdf.fragment
 
 import android.os.Build
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import shs.itexperts.bookpdf.R
 import shs.itexperts.bookpdf.model.PdfRendererBasicViewModel
 import shs.itexperts.bookpdf.views.TouchImageView
 

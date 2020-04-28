@@ -1,10 +1,12 @@
 package shs.itexperts.bookpdf.activities
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.view.MenuItem
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +20,7 @@ class ExternalStorageActivity : AppCompatActivity() {
     private val fileList = ArrayList<File>()
     private lateinit var rv : RecyclerView
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_external_storage)
@@ -28,7 +31,11 @@ class ExternalStorageActivity : AppCompatActivity() {
         rv.setHasFixedSize(true)
         rv.layoutManager = LinearLayoutManager(this)
 
-        val dir = File(Environment.getExternalStorageDirectory().absolutePath+"/Pdf App/")
+        reFresh()
+    }
+
+    private fun reFresh(){
+        val dir = File(this.getExternalFilesDir(null)?.absolutePath+"/Pdf App/")
         Log.d("absolutePath",dir.absolutePath)
 
         // searchDir() method orqali pdf fayllarni topib fileList ga ozlashtiramiz
@@ -45,7 +52,6 @@ class ExternalStorageActivity : AppCompatActivity() {
             }
         })
     }
-
     // xotira ichidagi ".pdf" ma'lumotlarni topadi.
     private fun searchDir(dir: File) {
         val pdfPattern = ".pdf"
