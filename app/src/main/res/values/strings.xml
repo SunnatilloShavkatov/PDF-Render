@@ -11,5 +11,8 @@
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
     <string name="share">Share</string>
+    <string name="android_pdf">Android Pdf</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="write_pdf">Write PDf</string>
 
 </resources>

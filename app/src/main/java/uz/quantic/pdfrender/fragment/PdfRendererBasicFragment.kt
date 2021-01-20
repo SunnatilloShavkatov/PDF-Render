@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.fragment
+package uz.quantic.pdfrender.fragment
 
 import android.os.Build
 import android.os.Bundle
@@ -10,9 +10,9 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import shs.itexperts.bookpdf.R
-import shs.itexperts.bookpdf.model.PdfRendererBasicViewModel
-import shs.itexperts.bookpdf.views.TouchImageView
+import uz.quantic.pdfrender.R
+import uz.quantic.pdfrender.model.PdfRendererBasicViewModel
+import uz.quantic.pdfrender.views.TouchImageView
 
 class PdfRendererBasicFragment : Fragment() {
     private val viewModel: PdfRendererBasicViewModel by viewModels()

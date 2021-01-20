@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.activities
+package uz.quantic.pdfrender.activities
 
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import shs.itexperts.bookpdf.fragment.PdfRendererBasicFragment
-import shs.itexperts.bookpdf.R
+import uz.quantic.pdfrender.fragment.PdfRendererBasicFragment
+import uz.quantic.pdfrender.R
 
 class MainActivity : AppCompatActivity() {
 

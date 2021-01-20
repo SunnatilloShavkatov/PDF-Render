@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.model
+package uz.quantic.pdfrender.model
 
 import android.app.Application
 import android.graphics.Bitmap

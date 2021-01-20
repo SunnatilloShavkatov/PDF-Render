@@ -1,10 +1,9 @@
-package uz.quantic.bookpdf.activities
+package uz.quantic.pdfrender.activities
 
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
 import android.view.MenuItem
 import android.widget.Button
@@ -15,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.itextpdf.text.Document
 import com.itextpdf.text.Paragraph
 import com.itextpdf.text.pdf.PdfWriter
-import shs.itexperts.bookpdf.R
+import uz.quantic.pdfrender.R
 import java.io.File
 import java.io.FileOutputStream
 import java.text.SimpleDateFormat

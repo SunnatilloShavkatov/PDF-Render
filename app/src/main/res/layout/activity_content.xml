@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".activities.ContentActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/main"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="3dp"
         android:focusable="true"
         android:clickable="true"
-        android:foreground="?android:selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:foreground="?android:selectableItemBackground">
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,7 +28,7 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:padding="5dp"
-            android:text="Android Pdf"
+            android:text="@string/android_pdf"
             android:textColor="#000"
             android:textSize="20sp" />
 
@@ -36,15 +38,13 @@
         android:id="@+id/main1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
         app:cardCornerRadius="20dp"
         app:cardElevation="3dp"
         android:focusable="true"
         android:clickable="true"
-        android:foreground="?android:selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main" >
+        android:foreground="?android:selectableItemBackground">
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:padding="5dp"
-            android:text="Open PDF"
+            android:text="@string/open_pdf"
             android:textColor="#000"
             android:textSize="20sp" />
 
@@ -62,15 +62,13 @@
         android:id="@+id/main2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="3dp"
         android:focusable="true"
         android:clickable="true"
-        android:foreground="?android:selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main1" >
+        android:foreground="?android:selectableItemBackground">
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,10 +76,10 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:padding="5dp"
-            android:text="Write PDf"
+            android:text="@string/write_pdf"
             android:textColor="#000"
             android:textSize="20sp" />
 
     </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

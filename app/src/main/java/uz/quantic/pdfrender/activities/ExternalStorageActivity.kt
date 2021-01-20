@@ -1,18 +1,17 @@
-package uz.quantic.bookpdf.activities
+package uz.quantic.pdfrender.activities
 
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
 import android.view.MenuItem
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import shs.itexperts.bookpdf.R
-import shs.itexperts.bookpdf.adapter.RecyclerPdfAdapter
-import shs.itexperts.bookpdf.listener.ClickListener
+import uz.quantic.pdfrender.R
+import uz.quantic.pdfrender.adapter.RecyclerPdfAdapter
+import uz.quantic.pdfrender.listener.ClickListener
 import java.io.File
 
 class ExternalStorageActivity : AppCompatActivity() {

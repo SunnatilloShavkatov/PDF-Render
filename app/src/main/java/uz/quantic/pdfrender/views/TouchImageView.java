@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.views;
+package uz.quantic.pdfrender.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

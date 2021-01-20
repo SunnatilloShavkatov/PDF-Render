@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".fragment.PdfRendererBasicFragment">
 
-    <shs.itexperts.bookpdf.views.TouchImageView
+    <uz.quantic.pdfrender.views.TouchImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="0dp"

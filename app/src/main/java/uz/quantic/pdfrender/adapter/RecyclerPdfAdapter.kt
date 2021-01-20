@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.adapter
+package uz.quantic.pdfrender.adapter
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -12,8 +12,8 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import shs.itexperts.bookpdf.R
-import shs.itexperts.bookpdf.listener.ClickListener
+import uz.quantic.pdfrender.R
+import uz.quantic.pdfrender.listener.ClickListener
 import java.io.File
 
 class RecyclerPdfAdapter(private val content: Context, private var list: List<File>) :

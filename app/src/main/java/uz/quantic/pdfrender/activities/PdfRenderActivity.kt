@@ -1,4 +1,4 @@
-package uz.quantic.bookpdf.activities
+package uz.quantic.pdfrender.activities
 
 import android.annotation.SuppressLint
 import android.content.ContextWrapper
@@ -9,8 +9,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_pdf_render.*
-import shs.itexperts.bookpdf.R
+import uz.quantic.pdfrender.R
 import java.io.*
 import java.lang.Exception
 
@@ -36,7 +35,7 @@ class PdfRenderActivity : AppCompatActivity() {
         editText = findViewById(R.id.edit_message)
 
         if (isExternalStorageWritable()){
-            buttonSave.isEnabled = false
+            btnSave.isEnabled = false
         }else{
             val contextWrapper = ContextWrapper(applicationContext)
             file = File(contextWrapper.getExternalFilesDir(myFile), fileName)

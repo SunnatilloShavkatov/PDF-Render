@@ -1,11 +1,11 @@
-package uz.quantic.bookpdf.activities
+package uz.quantic.pdfrender.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import com.github.barteksc.pdfviewer.PDFView
-import shs.itexperts.bookpdf.R
+import uz.quantic.pdfrender.R
 import java.io.File
 
 class OpenPdfActivity : AppCompatActivity() {

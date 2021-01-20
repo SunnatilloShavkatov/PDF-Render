@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="uz.quantic.bookpdf">
+    package="uz.quantic.pdfrender">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -12,21 +12,21 @@
         android:roundIcon="@drawable/pdf_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.OpenPdfActivity"
+        <activity android:name="uz.quantic.pdfrender.activities.OpenPdfActivity"
             android:label="Open Pdf"/>
-        <activity android:name=".activities.ExternalStorageActivity"
+        <activity android:name="uz.quantic.pdfrender.activities.ExternalStorageActivity"
             android:label="Pdf List"/>
-        <activity android:name=".activities.WritePdfActivity"
+        <activity android:name="uz.quantic.pdfrender.activities.WritePdfActivity"
             android:label="Write Pdf"/>
-        <activity android:name=".activities.PdfRenderActivity" />
-        <activity android:name=".activities.ContentActivity">
+        <activity android:name="uz.quantic.pdfrender.activities.PdfRenderActivity" />
+        <activity android:name="uz.quantic.pdfrender.activities.ContentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
+        <activity android:name="uz.quantic.pdfrender.activities.MainActivity" />
     </application>
 
 </manifest>
