@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.adapter
+package uz.quantic.bookpdf.adapter
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog

@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.activities
+package uz.quantic.bookpdf.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

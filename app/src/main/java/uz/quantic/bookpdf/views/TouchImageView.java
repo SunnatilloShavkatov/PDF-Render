@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.views;
+package uz.quantic.bookpdf.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.fragment
+package uz.quantic.bookpdf.fragment
 
 import android.os.Build
 import android.os.Bundle

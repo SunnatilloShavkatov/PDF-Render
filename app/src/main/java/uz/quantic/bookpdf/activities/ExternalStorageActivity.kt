@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.activities
+package uz.quantic.bookpdf.activities
 
 import android.content.Intent
 import android.os.Build

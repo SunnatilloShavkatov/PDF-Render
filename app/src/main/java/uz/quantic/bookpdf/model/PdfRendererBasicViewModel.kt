@@ -1,4 +1,4 @@
-package shs.itexperts.bookpdf.model
+package uz.quantic.bookpdf.model
 
 import android.app.Application
 import android.graphics.Bitmap
